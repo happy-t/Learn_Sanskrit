@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/tan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/numbers"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Numbers"
+            android:onClick="Numbers"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/numbers"
+            style="@style/myButtons"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/colors"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Colors"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/colors"
+            style="@style/myButtons"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/family_name_id"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Family Names"
+            android:background="@color/famNames"
+            android:textColor="@color/white"
+            android:gravity="center"
+            style="@style/myButtons"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/phrases_id"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Phrases"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@color/phrases"
+            style="@style/myButtons"
+            android:textAllCaps="false"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/tan">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Developed By:-"
+                android:textSize="12sp"
+                android:paddingBottom="9dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="30dp"
+                android:layout_above="@+id/name"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/myname"
+                android:layout_marginBottom="25dp"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:layout_marginRight="33dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
